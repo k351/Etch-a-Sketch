@@ -1,18 +1,23 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: end;
+  align-items: center;
 }
 
 .container {
   display: flex;
-  justify-content: stretch;
-  width: 550px;
-  height: 550px;
+  flex-wrap: wrap;
+  width: 920px;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
 }
 
 .square {
-  width: 30px;
-  height: 30px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   border: 1px black solid;
 }
